@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimaryDark"
+    tools:context="com.example.shahityaa.myapplication.page2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <Button
+                android:id="@+id/calc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="84dp"
+                android:layout_weight="1"
+                android:text="VIEW BILL"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="511dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:isScrollContainer="true"
+                android:text="Select your packages"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/hr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/manic"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="29dp"
+                        android:duplicateParentState="false"
+                        android:text="Hairdo"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/manic"
+                        android:layout_alignStart="@+id/manic"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="64dp"
+                        android:text="Facial"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorLink="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/pedi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/facial"
+                        android:layout_below="@+id/facial"
+                        android:layout_marginTop="25dp"
+                        android:text="Pedicure"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/manic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/pedi"
+                        android:layout_marginTop="31dp"
+                        android:text="Manicure"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

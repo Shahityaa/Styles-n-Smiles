@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:backgroundTint="@android:color/background_dark"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.shahityaa.myapplication.services">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:subtitleTextColor="@android:color/background_light"
+            app:titleTextColor="@android:color/background_light"
+            app:popupTheme="@style/MyDarkToolbarStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark"
+            android:backgroundTint="@android:color/background_dark"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/haircut" />
+
+                    <TextView
+                        android:id="@+id/yazhtextView1"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Haircut"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/yazhtableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="121dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/hairspa" />
+
+                    <TextView
+                        android:id="@+id/yazhtextView2"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Hairspa"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/yazhtableRow4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="69dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/facial" />
+
+                    <TextView
+                        android:id="@+id/yazhtextView4"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Facial"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/yazhtableRow5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/bridal1" />
+
+                    <TextView
+                        android:id="@+id/yazhtextView5"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Bridal Makeover"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/yazhtableRow6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="102dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/pedi" />
+
+                    <TextView
+                        android:id="@+id/yazhtextView6"
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:text="Manicure Pedicure"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </FrameLayout>
+    </ScrollView>
+    </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

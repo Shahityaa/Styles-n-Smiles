@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "105941366315",
+    "firebase_url": "https://notifyusers-cb9c3.firebaseio.com",
+    "project_id": "notifyusers-cb9c3",
+    "storage_bucket": "notifyusers-cb9c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105941366315:android:670450f258b863a3",
+        "android_client_info": {
+          "package_name": "com.example.shahityaa.notifyusers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105941366315-ntbn5da0jqqnrfpo2j55e1bajq3bif3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9g-UxlvOzDHxbJ3He4KdL6KfJ6S_0Cx0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

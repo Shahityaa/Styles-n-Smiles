@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/op1"
+        android:title="About Us"
+        android:visible="true"
+
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/op3"
+        android:title="Fix appointments"
+        android:visible="true"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/op2"
+        android:title="Services Offered"
+        android:visible="true"
+
+        />
+    <item
+        android:id="@+id/op4"
+        android:title="Know your bill"
+        android:visible="true"
+        app:showAsAction="never"
+        />
+</menu>
